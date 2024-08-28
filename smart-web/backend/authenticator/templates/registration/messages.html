@@ -1,0 +1,26 @@
+<!-- backend/authenticator/templates/registration/messages.html -->
+{% load static %}
+
+{% if messages %}
+  {% for message in messages %}
+
+    {% if message.tags == 'success' %}
+    <div class="alert success">
+        <h3>{{message}}</h3>
+        <a class="close"><p class="cross">&times;</p></a>
+    </div>
+    {% endif %}
+
+    {% if message.tags == 'error' %}
+    <div class="alert danger">
+        <h3>{{message}}</h3>
+        <a class="close"><p class="cross">&times;</p></a>
+    </div>
+    {% endif %}
+
+ {% endfor %}
+{% endif %}
+
+<link rel="stylesheet" href="{% static 'css/messages.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{% static 'js/messages.js' %}"></script>

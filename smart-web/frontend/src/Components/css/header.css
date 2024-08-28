@@ -1,0 +1,135 @@
+.header {
+  height: 6rem;
+  display: flex;
+  border-bottom: 1px solid #f3fbfb;
+  align-items: center;
+  background-color: #f3fbfb;
+}
+
+.header img{
+  height: 30px;
+  width: 60px;
+  margin: 0% 2% 0% 3%;
+}
+
+.header .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border-radius: 10rem;
+  width: 45vw;
+  height: 1.8rem;
+  padding: 7.5px 16px;
+  box-shadow: 0 0.2em 7px 1px rgba(3, 28, 48, 0.2);
+}
+
+.header .search-bar.focused {
+  box-shadow: none;
+  border: 0.5px solid rgba(3, 28, 48, 0.5);
+  outline: none
+}
+
+.header .search-bar input {
+  font-size: 16px;
+  padding: 0px 12px;
+  background-color: transparent;
+  color: #818283;
+  z-index: 1;
+  outline: none;
+  border: 1px solid #ffffff; 
+}
+
+.header .search-bar input:focus {
+  box-shadow: none;
+  border: 0.5px solid #ffffff !important;
+  outline: none;  
+}
+
+.header .search-bar input::placeholder {
+  color: #818283;
+  opacity: 50%;
+  position: absolute;
+  outline: none;
+  border: 1px white;
+}
+
+.header .search-bar .search-icon {
+  color: rgba(3, 28, 48, 0.6);
+  padding: 0px;
+}
+
+.header .search-bar button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  justify-content: flex-end;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0px 16px 0px 16px;
+}
+
+.header .search-bar .clear-icon,
+.header .search-bar .filter-icon,
+.header .search-bar .rewrite-icon,
+.header .search-bar .arrow-icon{
+color: rgba(3, 28, 48, 0.6);
+font-size: 16px;
+}
+
+.header .search-bar .clear-icon:hover,
+.header .search-bar .filter-icon:hover,
+.header .search-bar .rewrite-icon:hover,
+.header .search-bar .arrow-icon:hover{
+color: rgba(3, 28, 48, 1);
+}
+
+.header .search-bar .separation{
+  display: block;
+  border-left: 1px solid rgba(3,28,48,0.6);
+  height: 70%;
+  width: 1px;
+  margin: 0px 0px 0px 13px;
+}
+
+.navbar {
+  position: fixed;
+  top: -4rem;
+  width: 100%;
+  z-index: 1000;
+  background-color: #2a2a2b;
+  transition: transform 0.3s ease-in-out;
+  height: 4rem;
+}
+
+.navbar.show {
+  transform: translateY(4rem);
+}
+
+.navbar img {
+  margin: 0% 1.5% 0% 5%;
+}
+
+.navbar .search-bar {
+  margin: 0%;
+  padding: 5px 16px;
+  background-color: #2a2a2b;
+  border: 1px solid #3c4043;
+}
+
+.navbar .search-bar .search-icon,
+.navbar .search-bar .clear-icon,
+.navbar .search-bar .separation{
+  visibility: hidden;
+}
+
+.navbar .search-bar input{
+  font-size: 15px;
+}
+
+.navbar .search-bar .clear-icon,
+.navbar .search-bar .arrow-icon{
+  font-size: 15px;
+}

@@ -1,0 +1,339 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html, body {
+  background-color: #f3fbfb;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  background-color: #f3fbfb;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .header {
+  height: 6rem;
+  display: flex;
+  border-bottom: 1px solid #f3fbfb;
+  align-items: center;
+  background-color: #f3fbfb;
+}
+
+.App .header img{
+  margin: 0% 3% 0% 6%;
+}
+
+.App .header .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10rem;
+  width: 45vw;
+  height: 1.8rem;
+  padding: 7.5px 16px;
+  box-shadow: 0 0.2em 7px 0 rgba(0, 0, 0, 0.17);
+}
+
+.App .header .search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0px 12px;
+  background-color: transparent;
+  color: #818283;
+  z-index: 1;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.App .header .search-bar input::placeholder {
+  color: #818283;
+  opacity: 50%;
+  position: absolute;
+}
+
+.App .header .search-bar .search-icon {
+  color: #888;
+  position: absolute;
+  padding: 15px 30px 15px 15px;
+  border-radius: 10rem;
+  transform: translate(-35px, 0);
+  transition: transform 5s ease-in-out;
+  background-color: #ffffff;
+}
+
+.App .header .search-bar button {
+  border: None;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.App .header .search-bar .clear-icon,
+.App .header .search-bar .filter-icon,
+.App .header .search-bar .rewrite-icon,
+.App .header .search-bar .arrow-icon{
+  color: #888;
+  font-size: 16px;
+}
+
+.App .header .search-bar .clear-icon:hover,
+.App .header .search-bar .arrow-icon:hover{
+  color: #8ab4f8;
+}
+
+.App .header .search-bar .separation{
+  display: block;
+  border-left: 1px solid #888;
+  height: 65%;
+  margin: 0px 5px;
+}
+
+.App .navbar {
+  position: fixed;
+  top: -4rem;
+  width: 100%;
+  z-index: 1000;
+  background-color: #2a2a2b;
+  transition: transform 0.3s ease-in-out;
+  height: 4rem;
+}
+
+.App .navbar.show {
+  transform: translateY(4rem);
+}
+
+.App .navbar img {
+  margin: 0% 1.5% 0% 5%;
+}
+
+.App .navbar .search-bar {
+  margin: 0%;
+  padding: 5px 16px;
+  background-color: #2a2a2b;
+  border: 1px solid #3c4043;
+}
+
+.App .navbar .search-bar .search-icon,
+.App .navbar .search-bar .clear-icon,
+.App .navbar .search-bar .separation{
+  visibility: hidden;
+}
+
+.App .navbar .search-bar input{
+  font-size: 15px;
+}
+
+.App .navbar .search-bar .clear-icon,
+.App .navbar .search-bar .arrow-icon{
+  font-size: 15px;
+}
+
+.App .main{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 13.5%;
+  margin-right: 38.3%;
+}
+
+.App .main .results {
+  padding: 0;
+}
+
+.App .main .results ul {
+  padding: 0;
+  margin: 0;
+}
+
+.App .main .results ul li {
+  list-style-type: none;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.App .main .results ul li #r1{
+  width: 30vw;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #bdc1c6;
+  display: flex;
+  gap: 0px 0px;
+  align-items: center;
+  justify-items: start;
+}
+
+.App .main .results ul li #r1 .iconContainer{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.App .main .results ul li #r1 .iconContainer img{
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.App .main .results ul li #r1 .textContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.App .main .results ul li #r1 .textContainer .site{
+  color: #031C30;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.App .main .results ul li #r1 .textContainer .link{
+  color: #031C30;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.App .main .results ul li .r2{
+  width: 45vw;
+  height: 4%;
+  color: #031C30;
+  margin-bottom: 5%;
+}
+
+.App .main .results ul li .r2 a {
+  color: #031C30;
+  font-size: 21px;
+  margin-top: 18px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.272;
+}
+
+.App .main .results ul li .r2 p {
+  color: #3f4244;
+  font-size: 14px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.App .main .footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45vw;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.App .main .footer span{
+  font: 'Quicksand';
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #031C30;
+}
+
+.App .main .footer .pagination {
+  display: inline-block;
+}
+
+.App .main .footer .pagination button {
+  color: #031C30;
+  font-size: 13px;
+  float: left;
+  padding: 5px 8px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.App .main .footer .pagination button.active {
+  color: #031C30;
+}
+
+.App .main .footer .pagination button:hover:not(.active){
+  color: #aaa9a9;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.App .main .recents-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-bottom: 90px;
+  width: 300px;
+  height: 100%;
+  background-color:#031C30;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .main .recents-panel h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.App .main .recents-panel h4 {
+  color: #fff;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.App .main .recents-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.App .main .recents-panel ul li a {
+  color: #aeb0b3;
+}
+.logout-button {
+  background-color: #818283;
+  position: fixed;
+  bottom: 0px;
+  width: 300px;
+  padding: 15px;
+  
+  right:28px;
+}
+.check-history-button {
+  background-color: #4c77a2;
+  position: fixed;
+  bottom: 54px;
+  width: 300px;
+  padding: 15px;
+  
+  right:28px;
+
+}
+.App .main .recents-panel li {
+  cursor: pointer;
+  padding: 10px;
+  color: #fff; /*#bdc1c6;*/
+  transition: background-color 0.3s ease;
+}
+
+.App .main .recents-panel li:hover {
+  background-color: #353434;
+  opacity: 50%;
+}

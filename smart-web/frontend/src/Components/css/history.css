@@ -1,0 +1,47 @@
+/* styles.css */
+
+.history-container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .history-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .history-item-info {
+    flex-grow: 1;
+  }
+  
+  .history-item-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .link {
+    font-size: 14px;
+    color: #0073e5;
+  }
+  
+  .history-item-timestamp {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+  }
+  

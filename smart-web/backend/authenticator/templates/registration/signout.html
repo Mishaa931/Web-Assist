@@ -1,0 +1,26 @@
+<!-- backend/authenticator/templates/registration/signout.html -->
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Out | WebAssist</title>
+    <link rel="icon" type="image/png" href="{% static 'img/webassist-logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/signout.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <script src="{% static 'js/signout.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> 
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+            <p>You have been successfully signed out!</p>
+            <a href="{% url 'signin' %}"><button>Sign in again</button></a>
+        </div>
+    </div>
+</body>
+</html>

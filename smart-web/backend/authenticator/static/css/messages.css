@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Regular.eot');                    /* IE9 Compat Modes */
+    src: url('../fonts/quicksand/Quicksand-Regular.woff') format('woff'),    /* Modern Browsers */
+         url('../fonts/quicksand/Quicksand-Regular.ttf')  format('truetype'),/* Safari, Android, iOS */  
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: calc(70% * max-content);
+    margin: 0;
+    padding: 8px 12px;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Quicksand';
+    font-size: 12px;
+}
+
+.alert h3{
+    padding: 0;
+    margin: 0 30px 0 0;
+    font-weight: 400;
+    color: #031C30;
+}
+
+.alert .cross{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+.close {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 50%;
+    font-size: 1.6em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.danger {
+    background-color: #a4c5e0;
+    border-left: 5px solid #031C30;
+}
+
+.danger .close {
+    border-color: #031C30;
+    color: #031C30;
+    font-weight: bolder;
+}
+
+
+.success {
+    background-color: #b8e9dfe0;
+    border-left: 5px solid #56A797;
+}
+
+.success .close {
+    border-color: #56A797;
+    color: #56A797;
+    font-weight: bolder;
+}

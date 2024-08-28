@@ -1,0 +1,25 @@
+<!-- backend/authenticator/templates/registration/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Web Assist{% endblock %}</title>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <!-- Include any common styles or scripts here -->
+</head>
+<body>
+    <div id="header">
+        <h1>{% block header %}Your Smart Search Assistant!{% endblock %}</h1>
+        <!-- Include any common navigation elements here -->
+    </div>
+    
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer">
+        <!-- Include any common footer elements here -->
+    </div>
+</body>
+</html>

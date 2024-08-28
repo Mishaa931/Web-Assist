@@ -1,0 +1,78 @@
+<!-- backend/authenticator/templates/registration/signup.html -->
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | WebAssist</title>
+    <link rel="icon" type="image/png" href="{% static 'img/webassist-logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <script src="{% static 'js/signup.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <!-- Sign Up Form -->
+  <div class="Auth-form-container">
+    <div class="message">
+      {% include 'registration/messages.html' %}
+    </div>
+    <table id="auth-form-table">
+      <tr>
+        <th id="col1">
+          <img src="../../static/img/launch.svg" id="rocket" alt="WebAssist">
+        </th>
+        <th id="col2">
+          <form method="POST" action="{% url 'signup' %}" class="Auth-form" id="signupForm" autocomplete="off"> 
+            {% csrf_token %} 
+            <input type="password" name="fake_password" id="id_fake_password" style="display:none;" autoComplete="new-password">
+            <div class="Auth-form-content">
+              <div class="Auth-form-title">
+                <h1>Create your Account</h1>
+                <div class="text-center">
+                  <h2>
+                    Already registered?
+                    <span class="link-primary">
+                      <a href="{% url 'login' %}">Sign In</a>
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="half-width">
+                <div class="input-group form-group mt-3" style="padding-right: 5px;">
+                  <legend>First Name</legend>
+                  <input type="text" name="first_name" maxlength="30" id="id_first_name" placeholder="First Name" required>
+                </div>
+                <div class="input-group form-group mt-3" style="padding-left: 5px;">
+                    <legend>Last Name</legend>
+                    <input type="text" name="last_name" maxlength="30" id="id_last_name" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="input-group form-group mt-3">
+                <legend>Email Address</legend>
+                <input type="email" name="email" maxlength="100" id="id_email" placeholder="Email" required>
+              </div>
+              <div class="input-group form-group mt-3">
+                <legend>Password</legend>
+                <input type="password" name="password" id="id_password" placeholder="Password"  autoComplete="new-password" required>
+              </div>
+              <div id="password-message">
+                <h3>Password must contain</h3>
+                <p class="password-message-item invalid">At least 8 characters</p>
+                <p class="password-message-item invalid">At least one lowercase letter</p>
+                <p class="password-message-item invalid">At least one uppercase letter</p>
+                <p class="password-message-item invalid">At least one numeric digit</p>
+                <p class="password-message-item invalid">At least one special character</p>
+              </div>
+              <button type="submit" class="submit form-group">Sign Up</button>
+            </div>
+          </form>
+        </th>
+      </tr>
+    </table>
+  </div>
+  <!-- Sign Up Form -->
+
+</body>
+</html>

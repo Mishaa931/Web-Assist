@@ -1,0 +1,74 @@
+/* GetStarted.css */
+
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f3fbfb , #031C30 );
+    color: #fff;
+    text-align: center;
+  }
+  
+  .logo {
+    background-color: #f3fbfb ;
+    padding: 5px;
+    width: 150px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .get-started-heading {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .login-button,
+  .signup-button {
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    font-family: "Quicksand";
+    font-weight: bold;
+    color: #031C30;
+    border: none;
+    margin-top: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #289280;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  

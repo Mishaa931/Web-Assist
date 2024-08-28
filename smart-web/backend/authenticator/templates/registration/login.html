@@ -1,0 +1,52 @@
+<!-- backend/authenticator/templates/registration/signin.html -->
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | WebAssist</title>
+    <link rel="icon" type="image/png" href="{% static 'img/webassist-logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+    <script src="{% static 'js/signin.js' %}"></script>
+</head>
+
+<body>
+  <!-- Sign In Form -->
+  <div class="Auth-form-container">
+    <div class="message">
+      {% include 'registration/messages.html' %}
+    </div>
+    <form method="POST" action="{% url 'login' %}" class="Auth-form" id="signinForm"> 
+      {% csrf_token %} 
+      <div class="Auth-form-content">
+        <div class="Auth-form-title">
+          <h1>Welcome back</h1>
+          <div class="text-center">
+            <h2>
+              Not registered yet?
+              <span class="link-primary">
+                <a href="{% url 'signup' %}">Sign Up</a>
+              </span>
+            </h2>
+          </div>
+        </div>
+        <div class="input-group form-group mt-3">
+          <legend>Email Address</legend>
+          {{form.username}}
+        </div>
+        <div class="input-group form-group mt-3">
+          <legend>Password</legend>
+          {{form.password}}
+        </div>
+        <button type="submit" class="submit form-group">Continue</button>
+        <p class="mt-2">
+          <a href="{% url 'reset-password' %}">Forgot password?</a>
+        </p>
+      </div>
+    </form>
+  </div>
+  <!-- Sign In Form -->
+
+</body>
+</html>

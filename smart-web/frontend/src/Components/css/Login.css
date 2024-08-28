@@ -1,0 +1,150 @@
+/* signin.css */
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Regular.eot');                    /* IE9 Compat Modes */
+    src: url('../fonts/quicksand/Quicksand-Regular.woff') format('woff'),    /* Modern Browsers */
+         url('../fonts/quicksand/Quicksand-Regular.ttf')  format('truetype'),/* Safari, Android, iOS */  
+}
+
+@font-face {
+    font-family: 'Alatsi';
+    src: url('../fonts/alatsi/Alatsi-Regular.eot');                    /* IE9 Compat Modes */
+    src: url('../fonts/alatsi/Alatsi-Regular.woff') format('woff'),    /* Modern Browsers */
+         url('../fonts/alatsi/Alatsi-Regular.ttf')  format('truetype'),/* Safari, Android, iOS */  
+}
+
+
+html, body {
+    background-color: #f3fbfb;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height:100%;
+    overflow: hidden;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.Auth-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27vw;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding: 30px 8px 30px 8px;
+    margin: 0% 5%;
+    border-radius: 8px;
+    background-color: white;
+    border: 0.1px solid #ccc;
+    height: 18.5em;
+}
+
+.Auth-form-title h1{
+    text-align: center;
+    font-size: 28px;
+    color: #031C30;
+    font-family: 'Alatsi';
+    font-weight: 600;
+    padding: 10%;
+    margin: 0%;
+}
+
+.text-center h2{
+    font-family: 'Quicksand';
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0%;
+    margin: 1% 0% 8% 0%;
+}
+
+.text-center .link-primary a{
+    color: #031C30;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-group {
+    width: 22.5vw;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+legend{
+    display: inline-block;
+    justify-content: left;
+    font-family: "Quicksand";
+    font-size: 10.5px;
+    color: #031C30;
+    position:relative;
+    top: 7px;
+    left: 10px;
+    width: max-content;
+    padding: 0 5px;
+    background-color: white;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;  
+}
+
+input:focus {
+    border: 0.5px solid #031c30cc !important;    
+}
+
+input::placeholder {
+    visibility: hidden;
+    opacity: 70%;
+    font-family: "Quicksand";
+}
+  
+button {
+    background-color: #031C30;
+    font-family: "Quicksand";
+    color: #fff;
+    font-size: 13px;
+    border: none;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.mt-2{
+    padding-top: 9px;
+    margin: 0%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mt-2 a{
+    font-family: "Quicksand";
+    color: #031C30;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
