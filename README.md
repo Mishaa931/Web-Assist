@@ -1,8 +1,4 @@
-# Go to your project folder
-cd Web-Assist/smart-web
-
-# Create README.md file
-echo "# Web-Assist – Smart Web Platform  
+# Web-Assist – Smart Web Platform 
 
 ## 🚀 Overview  
 **Web-Assist** is a smart web application built with **Django** that provides user authentication, search assistance, and integrated web utilities. The platform combines backend logic with a clean frontend interface to deliver a smooth user experience.  
