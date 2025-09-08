@@ -69,8 +69,26 @@ Now visit: 👉 http://127.0.0.1:8000/
 
 ---
 
-## 🖼️ Screenshots (Optional)  
-*(Add screenshots of homepage, signup, login, etc.)*  
+## 🖼️ Layout  
+<p align="center">
+  <img src="https://github.com/Mishaa931/Web-Assist/blob/main/Images/landingpage.png", alt=" Landing Page" width="50%" height="50%">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/Mishaa931/Web-Assist/blob/main/Images/sign%20up.png", alt=" Sign Up Page" width="50%" height="50%">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/Mishaa931/Web-Assist/blob/main/Images/login.png", alt=" Login Page" width="50%" height="50%">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/Mishaa931/Web-Assist/blob/main/Images/search.png", alt=" Search Page" width="50%" height="50%">
+</p> 
+
+<p align="center">
+  <img src="https://github.com/Mishaa931/Web-Assist/blob/main/Images/browser%20history.png", alt=" browser history Page" width="50%" height="50%">
+</p> 
 
 ---
 
